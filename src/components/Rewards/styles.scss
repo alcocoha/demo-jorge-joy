@@ -1,0 +1,52 @@
+@import '../../assets/styles/responsive-mixins.scss';
+
+.rewards{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__img-container{
+    padding-bottom: 15px;
+  }
+
+  &__img{
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  &__scroll{
+    display: flex;
+    column-gap: 10px;
+    width: 300px;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    @include desk-small {
+      width: 700px;
+    }
+    @include desk-medium {
+      width: 900px;
+    }
+    @include desk-large {
+      width: 1200px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;     /* Tamaño del scroll en vertical */
+      height: 8px;    /* Tamaño del scroll en horizontal */
+      margin-top: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgb(255, 255, 255, 0.5);
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #ffffff;
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    &::-webkit-scrollbar-thumb:active {
+      background-color: #FFFFFF;
+    }
+  }
+}

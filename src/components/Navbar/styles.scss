@@ -1,0 +1,90 @@
+@import '../../assets/styles/fonts.scss';
+
+.menu{
+  background-color: #3F17E3;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 12;
+
+  &-btn{
+    height: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'HouschkaPro-Medium', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    background-color: #3F17E3;
+    cursor: pointer;
+
+    &__active{
+      background-color: #27E4EA;
+      border-bottom: 3px solid #FBFD37;
+      color: #3F17E3;
+      font-family: 'HouschkaPro-Bold', sans-serif;
+    }
+  }
+
+}
+
+.mobile-menu{
+  background-color: #3F17E3;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 12;
+  overflow: hidden;
+  transition: all 0.3s;
+
+  &__hamburguer{
+    &-container{
+      padding-top: 15px;
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    &-btn{
+      background-color: transparent;
+      border: none;
+    }
+    &-img{
+      width: 30px;
+    }
+  }
+
+  &-btn{
+    background-color: #3F17E3;
+    display: block;
+    padding: 19px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'HouschkaPro-Medium', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    border-top: 1px solid #27E4EA;
+    cursor: pointer;
+    text-align: left;
+
+    &__active{
+      background-color: #27E4EA;
+      border-left: 3px solid #FBFD37;
+      color: #3F17E3;
+      font-family: 'HouschkaPro-Bold', sans-serif;
+    }
+  }
+
+}

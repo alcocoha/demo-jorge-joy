@@ -1,0 +1,40 @@
+@import '../../assets/styles/responsive-mixins.scss';
+
+.comment-slide {
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  &__comment {
+    background-color: #6633fb;
+    padding: 15px 100px;
+    text-align: center;
+    border-radius: 20px;
+
+    &-h1 {
+      font-family: 'HouschkaPro-Bold', sans-serif;
+      color: #fff;
+      font-size: 25px;
+      @include desk-small {
+        font-size: 30px;
+      }
+    }
+    &-p {
+      font-family: 'HouschkaPro-Medium', sans-serif;
+      color: #fff;
+      font-size: 18px;
+      @include desk-small {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.each-slideshow-indicator {
+  &:before {
+    background-color: #6633fb !important;
+    width: 10px !important;
+    height: 10px !important;
+  }
+}

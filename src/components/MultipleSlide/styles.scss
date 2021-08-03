@@ -1,0 +1,127 @@
+@import 'react-slideshow-image/dist/styles.css';
+@import '../../assets/styles/fonts.scss';
+@import '../../assets/styles/responsive-mixins.scss';
+
+.multiple-slide {
+  // background-color: purple;
+  width: 100%;
+  position: relative;
+
+  &__item {
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    @include desk-small {
+      padding: 50px;
+    }
+  }
+
+  &__container {
+    background-color: #2c44fb;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 10px;
+
+    &-right {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-right-bg {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #fff;
+      @include desk-small {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    &-btn {
+      display: inline-block;
+      padding: 7px 13px;
+      background-color: #fbfd38;
+      color: #2c44fb;
+      font-family: 'HouschkaPro-Bold', sans-serif;
+      text-decoration: none;
+      font-size: 11px;
+      border-radius: 5px;
+      @include desk-small {
+        padding: 15px 25px;
+        font-size: 14px;
+      }
+    }
+
+    &-img {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 70px;
+      @include desk-small {
+        width: 120px;
+      }
+    }
+
+    &-period {
+      font-family: 'HouschkaPro-Medium', sans-serif;
+      color: #ffffff;
+      font-size: 12px;
+      margin-top: 25px;
+    }
+
+    &-h1 {
+      font-family: 'HouschkaPro-Bold', sans-serif;
+      color: #ffffff;
+      font-size: 20px;
+      @include desk-small {
+        font-size: 30px;
+      }
+    }
+
+    &-description {
+      font-family: 'HouschkaPro-Medium', sans-serif;
+      color: #ffffff;
+      font-size: 12px;
+      @include desk-small {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.btn-left-container {
+  width: 30px;
+  margin-right: -30px;
+  position: absolute;
+  left: -12px;
+
+  &__btn{
+    width: 15px;
+
+    @include desk-small {
+      width: 25px;
+    }
+  }
+}
+
+.btn-right-container {
+  width: 30px;
+  margin-left: -30px;
+  position: absolute;
+  right: -28px;
+
+  &__btn{
+    width: 15px;
+
+    @include desk-small {
+      width: 25px;
+    }
+  }
+}

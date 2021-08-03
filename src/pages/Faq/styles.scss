@@ -1,0 +1,11 @@
+.faq-collapse{
+  margin-top: 90px;
+  padding: 50px 150px;
+  min-height: calc(100vh - 255px);
+
+  &__h1{
+    font-family: 'HouschkaPro-Bold', sans-serif;
+    color: #6632fb;
+    text-align: center;
+  }
+}
